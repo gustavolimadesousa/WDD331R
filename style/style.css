@@ -1,0 +1,18 @@
+body {
+  background-color: #ededef;
+}
+main ul{
+  list-style: none;
+  padding: 0px;
+}
+main li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  margin: .5em;
+  background-color: #000000;
+  max-width: 10%;
+  text-align: center;
+  border-radius: 3px;
+}
