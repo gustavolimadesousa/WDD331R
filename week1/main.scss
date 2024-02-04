@@ -1,0 +1,138 @@
+@import "https://fonts.googleapis.com/css2?family=Khula&family=Lora:ital,wght@0,400..700;1,400..700&display=swap";
+
+// Variables
+
+// Colors
+$color_1: #333;
+$color_2: #666;
+$color_3: #00ddff;
+$color_4: #DEB887;
+$color_5: #d0d0d0;
+
+// Font-Families
+$font-family_1: Helvetica, Arial, sans-serif;
+$font-family_2: Lora;
+
+// Borders
+
+$border_1: solid $color_5 1px;
+
+// Mixin
+
+// Images
+
+@mixin img-config {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}
+
+
+body {
+	font-family: $font-family_1;
+	color: $color_1;
+	h1 {
+		font-family: $font-family_2;
+	}
+	a {
+		text-decoration: none;
+		color: $color_2;
+		&:hover {
+			color: $color_3;
+		}
+		&:active {
+			color: $color_4;
+		}
+	}
+}
+h2 {
+	font-family: $font-family_2;
+	padding: 0.5em;
+}
+a {
+	font-family: $font-family_2;
+}
+header {
+	h1 {
+		font-size: 4em;
+		text-align: center;
+		font-weight: 600;
+		a {
+			color: $color_1;
+			&:hover {
+				color: $color_1;
+			}
+		}
+	}
+}
+nav {
+	border-top: $border_1;
+	border-bottom: $border_1;
+	a {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 450;
+	}
+	ul {
+		list-style-type: none;
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+	}
+	li {
+		padding: .5em;
+	}
+}
+h2.post-date {
+	text-align: right;
+	text-transform: uppercase;
+	border-bottom: $border_1;
+}
+p {
+	padding: 0.5em;
+	font-size: .98em;
+	font-weight: 700;
+}
+img {
+  @include img-config;
+}
+@media screen and (min-width: 600px) {
+	nav {
+		li {
+			display: inline;
+			text-align: right;
+		}
+		ul {
+			text-align: right;
+			font-size: .8em;
+		}
+		a {
+			font-size: 1.5em;
+		}
+		margin: 1.5em auto;
+		padding: .5em;
+	}
+	article {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+	h2.post-date {
+		border-bottom: none;
+		border-right: $border_1;
+		margin: 0px;
+		padding: 12px;
+	}
+	section.post-content {
+		border-bottom: $border_1;
+	}
+	h2 {
+		margin: 0px;
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 35%;
+	}
+}

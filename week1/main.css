@@ -1,24 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
-
-body{
+@import "https://fonts.googleapis.com/css2?family=Khula&family=Lora:ital,wght@0,400..700;1,400..700&display=swap";
+body {
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
 }
-body h1, h2, a {
+body h1 {
   font-family: Lora;
-  
 }
 body a {
   text-decoration: none;
   color: #666;
 }
-body a:hover{
-color: #00ddff;
+body a:hover {
+  color: #00ddff;
 }
-body a:active{
+body a:active {
   color: #DEB887;
-  }
+}
+
+h2 {
+  font-family: Lora;
+  padding: 0.5em;
+}
+
+a {
+  font-family: Lora;
+}
+
 header h1 {
   font-size: 4em;
   text-align: center;
@@ -30,85 +37,83 @@ header h1 a {
 header h1 a:hover {
   color: #333;
 }
+
 nav {
   border-top: solid #d0d0d0 1px;
   border-bottom: solid #d0d0d0 1px;
 }
-nav a{
+nav a {
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: 450;
 }
 nav ul {
-list-style-type: none;
-text-align: center;
-padding: 0px;
-margin: 0px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 nav li {
-  padding: .5em;
+  padding: 0.5em;
 }
-h2.post-date{
+
+h2.post-date {
   text-align: right;
   text-transform: uppercase;
   border-bottom: solid #d0d0d0 1px;
 }
-h2, p{
+
+p {
   padding: 0.5em;
+  font-size: 0.98em;
+  font-weight: 700;
 }
-img{
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 65%;
 }
-p{
-  font-size: .98em;
-  font-weight: 700;
-}
 
 @media screen and (min-width: 600px) {
-  nav li{
+  nav {
+    margin: 1.5em auto;
+    padding: 0.5em;
+  }
+  nav li {
     display: inline;
     text-align: right;
   }
-  nav ul{
+  nav ul {
     text-align: right;
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  nav a{
+  nav a {
     font-size: 1.5em;
   }
-  nav {
-    margin: 1.5em auto;
-    padding: .5em;
-  }
-  article{
+  article {
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
-  h2.post-date{ 
+  h2.post-date {
     border-bottom: none;
     border-right: solid #d0d0d0 1px;
     margin: 0px;
     padding: 12px;
   }
-  section.post-content{
-  border-bottom: solid #d0d0d0 1px;
+  section.post-content {
+    border-bottom: solid #d0d0d0 1px;
   }
-  h2{
+  h2 {
     margin: 0px;
   }
-  img{
+  img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
   }
-
 }
 
-
-
-
-
+/*# sourceMappingURL=main.css.map */
