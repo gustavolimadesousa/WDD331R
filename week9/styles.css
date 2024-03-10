@@ -5,7 +5,7 @@
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
-  
+  flex-grow: 3;
 }
 
 .col-grid{
